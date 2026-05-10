@@ -3,6 +3,10 @@ spring-boot = "4.0.6"
 spring-dependency-management = "1.1.7"
 spring-cloud = "2025.1.1"
 dotenv-java = "3.2.0"
+jspecify = "1.0.0"
+errorprone-plugin = "4.2.0"
+nullaway = "0.12.3"
+errorprone-core = "2.38.0"
 
 [libraries]
 spring-boot-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
@@ -17,7 +21,11 @@ spring-boot-testcontainers = { module = "org.springframework.boot:spring-boot-te
 testcontainers-junit-jupiter = { module = "org.testcontainers:testcontainers-junit-jupiter" }
 junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
 postgresql = { module = "org.postgresql:postgresql" }
+jspecify = { module = "org.jspecify:jspecify", version.ref = "jspecify" }
+nullaway = { module = "com.uber.nullaway:nullaway", version.ref = "nullaway" }
+errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone-core" }
 
 [plugins]
 spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
 spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
+errorprone = { id = "net.ltgt.errorprone", version.ref = "errorprone-plugin" }

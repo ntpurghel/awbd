@@ -2,20 +2,20 @@
 
 ## Infrastructure Services
 
-| Service | Port | Description |
-|---|---|---|
-| `config-server` | 8888 | Centralized Spring Cloud Config — all services pull config from here |
-| `eureka-server` | 8761 | Service discovery — all services register here |
-| `api-gateway` | 8080 | Spring Cloud Gateway — single entry point, handles routing and JWT validation |
+| Service         | Port | Description                                                                   |
+|-----------------|------|-------------------------------------------------------------------------------|
+| `config-server` | 8888 | Centralized Spring Cloud Config — all services pull config from here          |
+| `eureka-server` | 8761 | Service discovery — all services register here                                |
+| `api-gateway`   | 8080 | Spring Cloud Gateway — single entry point, handles routing and JWT validation |
 
 ## Business Services
 
-| Service | Port | Entities | Database |
-|---|---|---|---|
-| `user-service` | 8081 | `UTILIZATOR`, `PROFIL_ADOPTATOR` | PostgreSQL — `db_users` |
-| `animal-service` | 8082 | `ADAPOST`, `SPECIE`, `RASA`, `ANIMAL`, `FISA_MEDICALA` | PostgreSQL — `db_animals` |
-| `adoption-service` | 8083 | `CERE_ADOPTIE` | PostgreSQL — `db_adoptions` |
-| `notification-service` | 8084 | (no DB) | Consumes events from RabbitMQ |
+| Service                | Port | Entities                                               | Database                      |
+|------------------------|------|--------------------------------------------------------|-------------------------------|
+| `user-service`         | 8081 | `UTILIZATOR`, `PROFIL_ADOPTATOR`                       | PostgreSQL — `db_users`       |
+| `animal-service`       | 8082 | `ADAPOST`, `SPECIE`, `RASA`, `ANIMAL`, `FISA_MEDICALA` | PostgreSQL — `db_animals`     |
+| `adoption-service`     | 8083 | `CERE_ADOPTIE`                                         | PostgreSQL — `db_adoptions`   |
+| `notification-service` | 8084 | (no DB)                                                | Consumes events from RabbitMQ |
 
 ## Communication
 
