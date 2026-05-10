@@ -16,7 +16,6 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-CLAUDE.md
 
 ### IntelliJ IDEA ###
 .idea
@@ -36,7 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-node_modules
-docs/Proiect_Aplicatii_Web_Microservicii.docx
-
-*.env

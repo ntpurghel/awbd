@@ -1,0 +1,5 @@
+spring:
+  jpa:
+    hibernate:
+      dll-auto: create-drop
+    show-sql: true
